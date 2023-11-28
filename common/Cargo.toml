@@ -1,0 +1,13 @@
+[package]
+name = "common"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "common"           # The name of the target.
+path = "src/lib.rs"    # The source file of the target.
+
+[dependencies]
+bcrypt = "0.15.0"
+lambda_http = "0.8.3"
+rand = { version = "0.8.5", features = ["getrandom"] }
