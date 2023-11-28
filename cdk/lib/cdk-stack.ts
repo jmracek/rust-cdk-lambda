@@ -24,7 +24,7 @@ export class UserAuthenticationStack extends cdk.Stack {
                 __dirname,
                 "..",
                 "..",
-                "lambdas/target/lambda/session/",
+                "target/lambda/session/",
             )),
             handler: "bootstrap",
             functionName: "session",
@@ -36,7 +36,7 @@ export class UserAuthenticationStack extends cdk.Stack {
                 __dirname,
                 "..",
                 "..",
-                "lambdas/target/lambda/user/"
+                "target/lambda/user/"
             )),
             handler: "bootstrap",
             functionName: "user",
